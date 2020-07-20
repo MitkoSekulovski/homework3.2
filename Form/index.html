@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="" method="POST">
+        <table  width="600px" cellpadding="10px" cellspacing="0px" >
+            <thead>
+                <th colspan="4" align="left" id="thid">Testform</th>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="name">Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password" 
+                        placeholder="Enter your password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <br>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="continent">Continent</label>
+                    </td>
+                    <td>
+                        <select name="continent" id="continent">
+                            <option value="" selected disabled hidden>Please select...</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Europe">Europe</option>
+                            <option value="North America">North America</option>
+                            <option value="South America">South America</option>
+                            <option value="Antarctica">Antarctica</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="meals">Meals</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="meals" id="melas">
+                        <label for="meals">breakfast</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="meals" id="melas">
+                        <label for="meals">lunch</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="meals" id="melas">
+                        <label for="meals">dinner</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="remakr">Remark</label>
+                    </td>
+                    <td>
+                        <textarea name="remarks" id="remarks" cols="30" rows="5"></textarea>
+                    </td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <th colspan="4" align="right" id="tfid">
+                    <input type="submit" value="Send" name="send" id="send">
+                    &nbsp;
+                    <input type="reset" value="Cancel" name="reset" id="reset">
+                </th>
+            </tfoot>
+        </table>
+    </form>
+    </body>
+</html>
